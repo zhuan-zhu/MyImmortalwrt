@@ -104,7 +104,8 @@ jobs:
           
           CONFIG_PACKAGE_tailscale=y
           CONFIG_PACKAGE_tailscaled=y
-
+          CONFIG_PACKAGE_ip-full=y
+          
           #
           # Target
           #
