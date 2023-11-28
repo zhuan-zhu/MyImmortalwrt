@@ -56,8 +56,8 @@ jobs:
       - name: Update feeds
         run: |
           # sed -i 's/#src-git helloworld/src-git helloworld/g' ./feeds.conf.default
-          git clone https://github.com/kongfl888/luci-app-adguardhome ./package/luci-app-adguardhome
-          git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
+          # git clone https://github.com/kongfl888/luci-app-adguardhome ./package/luci-app-adguardhome
+          # git clone https://github.com/sbwml/luci-app-mosdns -b v5 package/mosdns
           ./scripts/feeds clean
           ./scripts/feeds update -a
           ./scripts/feeds install -a
@@ -77,12 +77,9 @@ jobs:
           CONFIG_PACKAGE_default-settings=y
           CONFIG_PACKAGE_default-settings-chn=y
           
-          CONFIG_PACKAGE_luci-app-adguardhome=y
           # CONFIG_PACKAGE_luci-app-diskman_INCLUDE_btrfs_progs is not set
           # CONFIG_PACKAGE_luci-app-diskman_INCLUDE_lsblk is not set
           CONFIG_PACKAGE_luci-app-filetransfer=y
-          CONFIG_PACKAGE_luci-app-firewall=y
-          CONFIG_PACKAGE_luci-app-mosdns=y
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
           CONFIG_PACKAGE_luci-app-unblockneteasemusic=y
