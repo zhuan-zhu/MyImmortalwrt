@@ -93,7 +93,6 @@ jobs:
           #
           
           CONFIG_PACKAGE_luci-theme-argon=y
-          # CONFIG_PACKAGE_luci-theme-bootstrap is not set
           
           #
           # Package
