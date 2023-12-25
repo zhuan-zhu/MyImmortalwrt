@@ -72,7 +72,6 @@ jobs:
           CONFIG_PACKAGE_luci-app-filetransfer=y
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-ng is not set
           # CONFIG_PACKAGE_luci-app-rclone_INCLUDE_rclone-webui is not set
-          CONFIG_PACKAGE_luci-app-vlmcsd=y
           CONFIG_PACKAGE_luci-app-homeproxy=y
 
           #
