@@ -38,7 +38,7 @@ jobs:
     - name: Apply commit changes
       run: |
         if [ -f ./.git/MERGE_MSG ]; then
-          mkdir ./tmp && cp ./.git/MERGE_MSG ./tmp/message
+          mkdir -p ./tmp && cp ./.git/MERGE_MSG ./tmp/message
           sed -i "1c [bot] AutoMerging: merge all upstream\'s changes:" ./tmp/message
           git commit --file="./tmp/message"
         else
