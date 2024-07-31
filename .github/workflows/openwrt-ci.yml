@@ -100,6 +100,7 @@ jobs:
           CONFIG_PACKAGE_tailscaled=y
           CONFIG_PACKAGE_ip-full=y
           CONFIG_PACKAGE_luci-compat=y
+          CONFIG_PACKAGE_ethtool-full=y
           
           #
           # Target
