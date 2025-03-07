@@ -63,10 +63,10 @@ jobs:
           ./scripts/feeds install -a
       - name: Generate configuration file
         run: |
-          #rm -f ./.config*
-          #touch ./.config
+          rm -f ./.config*
+          touch ./.config
                              
-          #cat >> .config <<EOF
+          cat >> .config <<EOF
           ##
           
           # CONFIG_PACKAGE_luci-app-mosdns=y
@@ -74,15 +74,15 @@ jobs:
           # CONFIG_PACKAGE_luci-app-passwall2=y
           
           ##
-          #EOF
+          EOF
           
           #
           # ===============================================================
           # 
           
-          #sed -i 's/^[ \t]*//g' ./.config
+          sed -i 's/^[ \t]*//g' ./.config
           make defconfig
-          find / -type f -name ".config" 2>/dev/null
+          cat ./.config
           
       - name: Deliver configtest
         uses: actions/upload-artifact@v4
