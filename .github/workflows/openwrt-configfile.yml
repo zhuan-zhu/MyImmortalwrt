@@ -72,6 +72,8 @@ jobs:
           # CONFIG_PACKAGE_luci-app-mosdns=y
           # CONFIG_PACKAGE_luci-app-adguardhome=y
           # CONFIG_PACKAGE_luci-app-passwall2=y
+          CONFIG_PACKAGE_ip-full=y
+
           
           ##
           EOF
