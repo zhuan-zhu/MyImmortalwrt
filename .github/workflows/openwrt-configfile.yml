@@ -82,6 +82,7 @@ jobs:
           
           #sed -i 's/^[ \t]*//g' ./.config
           make defconfig
+          find . -type f -printf "%P\n"
           
       - name: Deliver configtest
         uses: actions/upload-artifact@v4
