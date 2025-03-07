@@ -72,8 +72,6 @@ jobs:
           # CONFIG_PACKAGE_luci-app-mosdns=y
           # CONFIG_PACKAGE_luci-app-adguardhome=y
           # CONFIG_PACKAGE_luci-app-passwall2=y
-          CONFIG_PACKAGE_ip-full=y
-
           
           ##
           EOF
@@ -89,4 +87,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: OpenWrt_config
-          path: ./.config
+          path: .config
