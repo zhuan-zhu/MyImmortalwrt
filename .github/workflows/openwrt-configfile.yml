@@ -82,6 +82,8 @@ jobs:
           
           sed -i 's/^[ \t]*//g' ./.config
           make defconfig
+          ls -la
+          ls ./
           cat ./.config
           
       - name: Deliver configtest
