@@ -82,12 +82,16 @@ jobs:
           
           sed -i 's/^[ \t]*//g' ./.config
           make defconfig
+          # ls -la
           ls -la
-          ls ./
+          # cd ./ ls -la
+          cd ./
+          ls-la
+          # cat
           cat ./.config
           
       - name: Deliver configtest
         uses: actions/upload-artifact@v4
         with:
           name: OpenWrt_config
-          path: ./.config
+          path: .config
